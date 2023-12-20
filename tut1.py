@@ -7,5 +7,6 @@ def hello_world():
     return render_template('index.html')
 @app.route("/about")
 def oli():
-    return render_template('about.html')
+    name = "oli"
+    return render_template ('about.html', name = name)
 app.run(debug=True)
